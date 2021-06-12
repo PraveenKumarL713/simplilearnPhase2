@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Learners Academy</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+   <servlet-name>loginServlet</servlet-name>
+   <servlet-class>com.learnersAcademy.Login</servlet-class>
+ </servlet>
+  <servlet>
+   <servlet-name>StudentServlet</servlet-name>
+   <servlet-class>com.learnersAcademy.Student</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>TeacherServlet</servlet-name>
+   <servlet-class>com.learnersAcademy.Teacher</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>SubjectServlet</servlet-name>
+   <servlet-class>com.learnersAcademy.Teacher</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>ClassServlet</servlet-name>
+   <servlet-class>com.learnersAcademy.Classs</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>ClassSubjectsServlet</servlet-name>
+   <servlet-class>com.learnersAcademy.ClassSubjects</servlet-class>
+ </servlet>
+ <servlet>
+   <servlet-name>TeacherClassesServlet</servlet-name>
+   <servlet-class>com.learnersAcademy.ClassSubjects</servlet-class>
+ </servlet>
+ 
+
+ <servlet-mapping>
+   <servlet-name>loginServlet</servlet-name>
+   <url-pattern>/login</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>StudentServlet</servlet-name>
+   <url-pattern>/login/Student</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>TeacherServlet</servlet-name>
+   <url-pattern>/login/Teacher</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>SubjectServlet</servlet-name>
+   <url-pattern>/login/Subject</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>ClassServlet</servlet-name>
+   <url-pattern>/login/ClassServlett</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>ClassSubjectsServlet</servlet-name>
+   <url-pattern>/login/ClassSubjectsServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+   <servlet-name>TeacherClassesServlet</servlet-name>
+   <url-pattern>/login/TeacherClassesServlet</url-pattern>
+ </servlet-mapping>
+ 
+  
+</web-app>
